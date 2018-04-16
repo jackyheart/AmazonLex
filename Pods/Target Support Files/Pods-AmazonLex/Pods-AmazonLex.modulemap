@@ -1,0 +1,6 @@
+framework module Pods_AmazonLex {
+  umbrella header "Pods-AmazonLex-umbrella.h"
+
+  export *
+  module * { export * }
+}

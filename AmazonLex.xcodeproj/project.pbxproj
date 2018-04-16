@@ -12,6 +12,8 @@
 		681C2BBD208484FD00717667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681C2BBB208484FD00717667 /* Main.storyboard */; };
 		681C2BBF208484FD00717667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681C2BBE208484FD00717667 /* Assets.xcassets */; };
 		681C2BC2208484FD00717667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681C2BC0208484FD00717667 /* LaunchScreen.storyboard */; };
+		681C2BCA2084858D00717667 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 681C2BC92084858D00717667 /* awsconfiguration.json */; };
+		9D08FA7A5863A34E2B5B6DC4 /* Pods_AmazonLex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D146B065252E74AB367B2B70 /* Pods_AmazonLex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		681C2BBE208484FD00717667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		681C2BC1208484FD00717667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681C2BC3208484FD00717667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681C2BC92084858D00717667 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6D6754E20E9BA5C4EE22D95B /* Pods-AmazonLex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonLex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonLex/Pods-AmazonLex.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2C4BD09005CEA0A3EADDD1 /* Pods-AmazonLex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonLex.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonLex/Pods-AmazonLex.release.xcconfig"; sourceTree = "<group>"; };
+		D146B065252E74AB367B2B70 /* Pods_AmazonLex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonLex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D08FA7A5863A34E2B5B6DC4 /* Pods_AmazonLex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ED57D21889AFF484B2DBF63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D146B065252E74AB367B2B70 /* Pods_AmazonLex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		681C2BAB208484FD00717667 = {
 			isa = PBXGroup;
 			children = (
 				681C2BB6208484FD00717667 /* AmazonLex */,
 				681C2BB5208484FD00717667 /* Products */,
+				F444AA9CBE22EA353EEB10F0 /* Pods */,
+				1ED57D21889AFF484B2DBF63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +76,19 @@
 				681C2BBB208484FD00717667 /* Main.storyboard */,
 				681C2BBE208484FD00717667 /* Assets.xcassets */,
 				681C2BC0208484FD00717667 /* LaunchScreen.storyboard */,
+				681C2BC92084858D00717667 /* awsconfiguration.json */,
 				681C2BC3208484FD00717667 /* Info.plist */,
 			);
 			path = AmazonLex;
+			sourceTree = "<group>";
+		};
+		F444AA9CBE22EA353EEB10F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D6754E20E9BA5C4EE22D95B /* Pods-AmazonLex.debug.xcconfig */,
+				AB2C4BD09005CEA0A3EADDD1 /* Pods-AmazonLex.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 681C2BC6208484FD00717667 /* Build configuration list for PBXNativeTarget "AmazonLex" */;
 			buildPhases = (
+				6B9DFDFD9507DD352E332173 /* [CP] Check Pods Manifest.lock */,
 				681C2BB0208484FD00717667 /* Sources */,
 				681C2BB1208484FD00717667 /* Frameworks */,
 				681C2BB2208484FD00717667 /* Resources */,
+				350C5DC456A95F755B45E970 /* [CP] Embed Pods Frameworks */,
+				F7C2AC7A05DED0BDB8FA3146 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681C2BCA2084858D00717667 /* awsconfiguration.json in Resources */,
 				681C2BC2208484FD00717667 /* LaunchScreen.storyboard in Resources */,
 				681C2BBF208484FD00717667 /* Assets.xcassets in Resources */,
 				681C2BBD208484FD00717667 /* Main.storyboard in Resources */,
@@ -130,6 +161,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350C5DC456A95F755B45E970 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmazonLex/Pods-AmazonLex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLex/AWSLex.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonLex/Pods-AmazonLex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B9DFDFD9507DD352E332173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazonLex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C2AC7A05DED0BDB8FA3146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonLex/Pods-AmazonLex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		681C2BB0208484FD00717667 /* Sources */ = {
@@ -272,6 +363,7 @@
 		};
 		681C2BC7208484FD00717667 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6754E20E9BA5C4EE22D95B /* Pods-AmazonLex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +378,7 @@
 		};
 		681C2BC8208484FD00717667 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2C4BD09005CEA0A3EADDD1 /* Pods-AmazonLex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
